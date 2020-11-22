@@ -40,13 +40,13 @@ public class Start_Frame extends JFrame {
 		add(panel);
 	}
 	public void title() {
-		title=new JLabel(new ImageIcon("mouseEngine.jpg"));
-		title.setBounds(10,50,850,100);
+		title=new JLabel(new ImageIcon("mouseEngine.png"));
+		title.setBounds(10,50,850,150);
 		add(title);
 	}
 	public void start_function() {
-		startBtn = new JButton(new ImageIcon("start.jpg"));
-		startBtn.setBounds(100,500,300,100);
+		startBtn = new JButton(new ImageIcon("start.png"));
+		startBtn.setBounds(100,500,300,140);
 		startBtn.setEnabled(false);
 		add(startBtn);
 		impelment_frame = new Implement_Frame();
@@ -63,8 +63,8 @@ public class Start_Frame extends JFrame {
 	}
 
 	public void rule_function() {
-		ruleBtn = new JButton(new ImageIcon("rule.jpg"));
-		ruleBtn.setBounds(500,500,300,100);
+		ruleBtn = new JButton(new ImageIcon("rule.png"));
+		ruleBtn.setBounds(500,500,280,140);
 		add(ruleBtn);
 		rule_frame = new Rule_Frame();
 		class RuleListener implements ActionListener {
@@ -78,8 +78,8 @@ public class Start_Frame extends JFrame {
 	}
 
 	public void langauage_function() {
-		languageBtn = new JButton(new ImageIcon("Language.jpg"));
-		languageBtn.setBounds(500,700,300,90);
+		languageBtn = new JButton(new ImageIcon("language.png"));
+		languageBtn.setBounds(500,700,300,120);
 		add(languageBtn);
 		class LanguageListener implements ActionListener {
 			public void actionPerformed(ActionEvent event) {
@@ -102,6 +102,8 @@ public class Start_Frame extends JFrame {
 				logitechBtn.setBorder(selected_border);
 				logitechBtn.setEnabled(false);
 				startBtn.setEnabled(true);
+				razerBtn.setEnabled(false);
+				steelseriesBtn.setEnabled(false);
 			}
 		}
 		ActionListener listener = new logitechListener();
@@ -120,6 +122,8 @@ public class Start_Frame extends JFrame {
 				razerBtn.setBorder(selected_border);
 				razerBtn.setEnabled(false);
 				startBtn.setEnabled(true);
+				logitechBtn.setEnabled(false);
+				steelseriesBtn.setEnabled(false);
 			}
 		}
 		ActionListener listener = new razerListener();
@@ -138,6 +142,8 @@ public class Start_Frame extends JFrame {
 				steelseriesBtn.setBorder(selected_border);
 				steelseriesBtn.setEnabled(false);
 				startBtn.setEnabled(true);
+				logitechBtn.setEnabled(false);
+				razerBtn.setEnabled(false);
 			}
 		}
 		ActionListener listener = new steelseriesListener();
@@ -145,8 +151,8 @@ public class Start_Frame extends JFrame {
 	}
 
 	public void resetBtn_function() {
-		resetBtn=new JButton(new ImageIcon("reset.jpg"));
-		resetBtn.setBounds(750,200,100,70);
+		resetBtn=new JButton(new ImageIcon("reset.png"));
+		resetBtn.setBounds(750,200,130,66);
 		add(resetBtn);
 		class resetListener implements ActionListener {
 			public void actionPerformed(ActionEvent event) {
