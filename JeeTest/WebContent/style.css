@@ -1,0 +1,16 @@
+@charset "UTF-8";
+			
+html, body {
+	font:'Montserrat', sans-serif;
+	height: 100%;
+	width:100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-image: url('bground.jpg');
+}
+.color
+{
+	color: #007CC7;
+}
