@@ -28,11 +28,28 @@ input[type=button], input[type=submit]{
 </head>
 <body>
 <h1>Mouse Engine</h1>
-<img alt="Mouse" src="icon.jpeg" width="120" height="120">
+<div class='icon'><img alt="Mouse" src="icon.jpeg" width="120" height="120"></div>
 <form action='TestProject' method='get'>
 <div class='brand'><input type='text' name='Brand' placeholder = 'Brand'/></div>
-<div class='keyword'><input type='text' name='keyword' placeholder = 'form:keyword weight'/></div>
+<div class='keyword'><input type='text' name='keyword' placeholder = 'form:number of keyword keyword_name weight'/></div>
 <div class='btn'><input type='submit' value='Search' /></div>
 </form>
+<div style="right:1px;position:absolute;">
+<div class="container">
+    <div class="card">
+      <div class="imgBox">
+        <img src="image1.jpg ">
+      </div>
+      <div class="details"> 
+        <h2>使用說明</h2>
+        <p>關鍵字:
+        English:bluetooth,wireless,wired,
+        optical,rechargeable,
+        powerplay,alkaline,lightsync,laser
+        中文:藍芽,無線,有線,光學,充電,強力播放,鹼性電池,光同步,雷射</p>
+      </div>
+    </div>
+  </div>
+  </div>
 </body>
 </html>

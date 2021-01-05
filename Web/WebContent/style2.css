@@ -16,8 +16,9 @@ img
 	border-radius: 50%;
 	position:absolute;
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display:  flex;
+    align-items: center;
+    justify-content:  center;
 }
 h1
 {
@@ -45,4 +46,33 @@ h1
     100% {
         opacity: 1;
     }
+}
+input[type=text]
+{
+  width:500px;
+  height:40px;
+  transition: width 0.4s ease-in-out;
+  padding:5px 15px; background:#ccc; border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 30px; 
+}
+.keyword
+{
+  position:absolute;
+  left:30%;
+  top:60%;
+  margin-top:-50px;
+  margin-left:-50px;
+}
+.brand
+{
+  position:absolute;
+  left:30%;
+  top:50%;
+  margin-top:-50px;
+  margin-left:-50px;
+}
+input[type=text]:focus {
+  width: 60%;
 }
