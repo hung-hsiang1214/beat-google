@@ -1,4 +1,5 @@
 
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -50,7 +51,7 @@ public class TestProject extends HttpServlet {
 			request.getRequestDispatcher("Search.jsp").forward(request, response);
 			return;
 		}
-		GoogleQuery google = new GoogleQuery(request.getParameter("Brand"));
+		GoogleQuery google = new GoogleQuery(request.getParameter("Brand")+"mouse");
 		HashMap<String, String> query = google.query();
 		String keyword = request.getParameter("keyword");
 		String[] input_keywords = keyword.split(" ");
@@ -84,7 +85,7 @@ public class TestProject extends HttpServlet {
 			time2 = System.currentTimeMillis();
 			System.out.println("doSomething()花了：" + (time2 - time1) / 1000 + "秒");
 			count++;
-			if (count == 2) {
+			if (count == 5) {
 				break;
 			}
 		}

@@ -1,3 +1,4 @@
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -19,7 +20,7 @@ public class GoogleQuery
 
 	public GoogleQuery(String searchKeyword) {
 		this.searchKeyword = searchKeyword;
-		this.url = "http://www.google.com/search?q=" + searchKeyword + "&oe=utf8&num=3";
+		this.url = "http://www.google.com/search?q=" + searchKeyword + "&oe=utf8&num=5";
 	}
 
 	private String fetchContent() throws IOException {
